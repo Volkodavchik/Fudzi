@@ -1,14 +1,12 @@
 /*
-*
-*
+*  Elementary algorithms from e-maxx.ru library
+*  Great thanks to Maksim Ivanov
 *
 */
 
 #pragma once
 
 #include <algorithm>
-
-using namespace std;
 
 namespace Fudzi
 {
@@ -57,8 +55,8 @@ public:
 	// @brief Searches all simple numbers in range [1;n]
 	// @param n right border of alg
 	// @return vector of simple marks in range [1;n]
-	vector<char> sieveOfEratosthenes(int n);
-	// @brief Fibonacchi number of n index
+	std::vector<char> sieveOfEratosthenes(int n);
+	// @brief Fibonacchi number of n index, uses Binet formula for calculation
 	// @param n index of Fibonacchi number
 	// @return Fibonacchi number of n index
 	int fibNumberBinet(int n);

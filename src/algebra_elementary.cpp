@@ -1,7 +1,6 @@
 /**
 *  Elementary algorithms from e-maxx.ru library
 *  Great thanks to Maksim Ivanov
-*
 **/
 
 #include <iostream>
