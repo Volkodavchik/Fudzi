@@ -1,15 +1,16 @@
-//============================================================================
-// Name        : Fudzi.cpp
-// Author      : Ivan Deviatkin
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+/**
+ *	@file main.cpp
+ *	@brief Self education project. Focus on interesting algorithms
+ *	@author Ivan Deviatkin <devyatkin.ivan@gmail.com>
+**/
 
 #include <iostream>
+
 using namespace std;
 
-int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+int main()
+{
+	cout << "!!!Fudzi project!!!" << endl;
+
 	return 0;
 }

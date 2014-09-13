@@ -1,6 +1,7 @@
 /**
-*  Elementary algorithms from e-maxx.ru library
-*  Great thanks to Maksim Ivanov
+ *	@file algebra_elementary.cpp
+ *	@brief Self education project. Focus on interesting algorithms
+ *	@author Ivan Deviatkin <devyatkin.ivan@gmail.com>
 **/
 
 #include <iostream>
