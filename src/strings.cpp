@@ -15,7 +15,7 @@ using namespace std;
 namespace Fudzi
 {
 
-vector<int> z_function_trivial(string s)
+vector<int> Strings::z_function_trivial(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> z (n);
