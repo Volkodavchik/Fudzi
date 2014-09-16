@@ -110,4 +110,38 @@ long long Strings::hash_strung(std::string s, long long weightCoef)
 	return hash;
 }
 
+unsigned Strings::SearchSubstringInText(string substring, string text, string divider)
+{
+	string final = substring + divider + text;
+
+	vector<int> zValues = Fudzi::Strings::z_function(final);
+	unsigned len = substring.length(), numof = 0;
+	for (unsigned i = len + 1; i < zValues.size(); i++)
+	{
+		if (static_cast<unsigned>(zValues.at(i)) == len)
+		{
+			numof++;
+		}
+	}
+	return numof;
+}
+
+void Strings::permutationUnordered(int k, string &s)
+{
+    for(unsigned int j = 1; j < s.size(); ++j)
+    {
+        swap(s[k % (j + 1)], s[j]);
+        k = k / (j + 1);
+    }
+}
+
+string Strings::reverseWithSTL(string &input)
+{
+	std::string output("");
+	for (std::string::reverse_iterator rit=input.rbegin(); rit!=input.rend(); ++rit)
+    output += *rit;
+
+	return output;
+}
+
 } // namespace Fudzi
