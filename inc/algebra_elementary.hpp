@@ -62,6 +62,14 @@ public:
 	//! @param n index of Fibonacchi number
 	//! @return Fibonacchi number of n index
 	static int fibNumberBinet(int n);
+	//! @brief Factorial recursive simple calculation
+	//! @param n factorial border n!
+	//! @return Fibonacchi number of n index
+	static unsigned long long int factorialRecursive(unsigned long long int  n);
+	//! @brief Factorial recursive simple calculation
+	//! @param n factorial border n!
+	//! @return Fibonacchi number of n index
+	static unsigned long long int factorialNonRecursive(unsigned long long int  n);
 
 };
 

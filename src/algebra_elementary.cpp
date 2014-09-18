@@ -146,6 +146,17 @@ int fibNumberBinet(int n)
 	return static_cast<int>((pow(tmpVal2, n) - pow(tmpVal3, n))/tmpVal1);
 }
 
+unsigned long long int factorialRecursive(unsigned long long int n)
+{
+	return (n)? (n * factorialRecursive(n-1)): 1;
+}
+
+unsigned long long int factorialNonRecursive(unsigned long long int n)
+{
+
+	return n;
+}
+
 } // namespace Fudzi
 
 // eof
