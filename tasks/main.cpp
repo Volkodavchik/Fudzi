@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Strings.hpp"
+#include "strings.hpp"
 
 using namespace std;
 
