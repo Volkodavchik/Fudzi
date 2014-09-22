@@ -20,9 +20,9 @@ void printVectorOfIntsInRow(vector<int> input)
 	cout << endl;
 }
 
-int factorial(int n)
+unsigned int factorial(unsigned int n)
 {
-  return (n == 1 || n == 0) ? 1 : factorial(n - 1) * n;
+	return (n <= 1) ? 1 : factorial(n - 1) * n;
 }
 
 int main()
@@ -60,7 +60,6 @@ int main()
 	unsigned num = Fudzi::Strings::SearchSubstringInText(strTest, Text, "#");
 	cout << "For a string: "<< strTest << " and text: "<< Text << " num of substrings are "<< num<< endl;
 */
-/*
 	//! permutations check
 	strTest = "abcdefghijklmnop";
 	unsigned len = strTest.size();
@@ -69,7 +68,7 @@ int main()
 		Fudzi::Strings::permutationUnordered(i, strTest);
 		cout << "Permutation " << i << " : "<< strTest << endl;
 	}
-*/
+
 
 	return 0;
 }

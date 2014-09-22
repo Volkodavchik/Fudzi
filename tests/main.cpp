@@ -4,14 +4,12 @@
  *	@author Ivan Deviatkin <devyatkin.ivan@gmail.com>
 **/
 
-#include <iostream>
-#include <vector>
-#include <string>
 #include "gtest/gtest.h"
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv) 
 {
-return 0;
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }

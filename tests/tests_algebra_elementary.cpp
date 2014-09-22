@@ -9,12 +9,21 @@
 #include <vector>
 #include <math.h>
 #include "algebra_elementary.hpp"
+#include "gtest/gtest.h"
 
 using namespace std;
 
 namespace Fudzi
 {
 
+// Tests factorial of positive numbers.
+TEST(BinPowTest, Smoke) 
+{
+    EXPECT_EQ(1, AlgebraElementary::binpow(1, 1));
+    EXPECT_EQ(4, AlgebraElementary::binpow(2, 2));
+    EXPECT_EQ(27, AlgebraElementary::binpow(3, 3));
+}
+/*
 int AlgebraElementary::phi(int n)
 {
 	int result = n;
@@ -145,7 +154,7 @@ int fibNumberBinet(int n)
 
 	return static_cast<int>((pow(tmpVal2, n) - pow(tmpVal3, n))/tmpVal1);
 }
-
+*/
 } // namespace Fudzi
 
 // eof

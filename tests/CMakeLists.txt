@@ -22,12 +22,14 @@ add_executable(
 	tests
 	# 
 	${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/tests_algebra_elementary.cpp
 )
 
 target_link_libraries(tests
-	pthread
+    fudzi
 	gtest
 	gtest_main
+    pthread
 )
 
 
