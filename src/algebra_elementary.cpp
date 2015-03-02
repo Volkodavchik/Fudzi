@@ -136,7 +136,7 @@ vector<char> AlgebraElementary::sieveOfEratosthenes(int n)
 	return prime;
 }
 
-int fibNumberBinet(int n)
+int AlgebraElementary::fibNumberBinet(int n)
 {
 	const double
 		tmpVal1 = static_cast<double>(sqrt(5)),
@@ -144,6 +144,11 @@ int fibNumberBinet(int n)
 		tmpVal3 = (1 - tmpVal1)/static_cast<double>(2);
 
 	return static_cast<int>((pow(tmpVal2, n) - pow(tmpVal3, n))/tmpVal1);
+}
+
+unsigned long long AlgebraElementary::factorialRecursive(unsigned long long n)
+{
+    return (n <= 1) ? 1 : factorialRecursive(n - 1) * n;
 }
 
 } // namespace Fudzi
