@@ -20,7 +20,13 @@ set(FUDZI_SOURCE_DIRS ${CMAKE_SOURCE_DIR}/src)
 
 set(FUDZI_LIBRARY_DIRS ${CMAKE_SOURCE_DIR}/build)
 
+
 project(fudzi)
+
+add_definitions(-ggdb -O2 -std=c++0x -fexceptions )
+add_definitions(-Wall -Wcast-align -Wcast-qual -Wextra -Wnon-virtual-dtor -Wno-unused-parameter -fcheck-new)
+add_definitions(-Wwrite-strings -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-strict-aliasing -fsigned-char)
+add_definitions(-fstrict-overflow -Wno-ignored-qualifiers -Wno-c++0x-compat -Wno-array-bounds -Wno-empty-body)
 
 include_directories(${FUDZI_INCLUDE_DIRS})
 
