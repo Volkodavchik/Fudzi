@@ -2,6 +2,8 @@
  *	@file main.cpp
  *	@brief Prints unordered permutations for a given string
  *	@author Ivan Deviatkin <devyatkin.ivan@gmail.com>
+ *  Task:
+ *  Print all permutations for a given string
 **/
 
 #include <iostream>

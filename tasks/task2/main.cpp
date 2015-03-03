@@ -2,6 +2,20 @@
  *	@file main.cpp
  *	@brief Network of friends print
  *	@author Ivan Deviatkin <devyatkin.ivan@gmail.com>
+ *  Task:
+ *  Given graph for a social network in form of below and start node:
+ *
+ *  A:B,C,D
+ *  B:A,D
+ *  C:B,E
+ *  A
+ *
+ *  what means A has friends B,C and D
+ *  print all friends for a start node, and for others in loop, should be no repeat
+ *  Possible output:
+ *  A: B,C,D
+ *  C: E
+ *  
 **/
 
 #include <iostream>
