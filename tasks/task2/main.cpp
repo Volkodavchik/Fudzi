@@ -99,7 +99,11 @@ void search_wide(std::map <string, vector<string>> & g, string start)
             {
                 used[el] = true;
                 q.push(el);
-                friends += el + ",";
+                if (!friends.empty())
+                {
+                    friends += ",";
+                }
+                friends += el;
             }
         }
         if (!friends.empty())
