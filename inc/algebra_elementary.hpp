@@ -67,6 +67,10 @@ public:
     //! @param n input number for calculating
     //! @return factorial for given number
     unsigned long long factorialRecursive(unsigned long long n);
+    //! @brief search all simple in range [1..m]
+    //! @param m range border
+    //! @return vector of all simple numbers in range
+    std::vector<int> allSimpleInRange(int m);
 };
 
 } //! namespace Fudzi
