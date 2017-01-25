@@ -11,7 +11,7 @@
 #include <string>
 // Fudzi
 #include "algebra_elementary.hpp"
-#include "strings.hpp"
+#include "stringAlgs.hpp"
 
 using namespace std;
 

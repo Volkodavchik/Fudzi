@@ -8,7 +8,7 @@
 #include <string>
 #include <iterator>
 #include <math.h>
-#include "strings.hpp"
+#include "stringAlgs.hpp"
 
 using namespace std;
 
