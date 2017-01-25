@@ -12,7 +12,7 @@ link_directories(${FUDZI_LIBRARY_DIRS}
 
 add_executable(	
 	task2
-	${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/task2.cpp
 )
 
 target_link_libraries(task2

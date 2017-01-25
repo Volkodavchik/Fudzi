@@ -14,7 +14,7 @@ namespace Fudzi
 /*
  * Class stores algorithms related to strings operations
  */
-class Strings
+class StringAlgs
 {
 private:
 protected:

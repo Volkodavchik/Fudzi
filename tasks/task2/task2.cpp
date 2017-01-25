@@ -18,6 +18,8 @@
  *  
 **/
 
+//#define TASK2_SEPARATE_EXECUTABLE
+
 #include <iostream>
 #include <string>
 #include <map>
@@ -129,7 +131,11 @@ void search_wide(std::map <string, vector<string>> & g, string start)
     }
 }
 
+#ifdef TASK1_SEPARATE_EXECUTABLE
 int main()
+#else
+int task2_main()
+#endif
 {
     vector<string> input;
     input.push_back("A:B,C,D");

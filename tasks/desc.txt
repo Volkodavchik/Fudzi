@@ -1,2 +1,0 @@
-1. task1: Permutations of strinf
-2. task2: Social network with friends - simple wide search

@@ -15,7 +15,7 @@ using namespace std;
 namespace Fudzi
 {
 
-vector<int> Strings::z_function_trivial(string s)
+vector<int> StringAlgs::z_function_trivial(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> z (n);
@@ -31,7 +31,7 @@ vector<int> Strings::z_function_trivial(string s)
 	return z;
 }
 
-vector<int> Strings::z_function(string s) 
+vector<int> StringAlgs::z_function(string s) 
 {
 	int n = static_cast<int>(s.length());
 	vector<int> z(n);
@@ -55,7 +55,7 @@ vector<int> Strings::z_function(string s)
 	return z;
 }
 
-vector<int> Strings::prefix_function_trivial(string s)
+vector<int> StringAlgs::prefix_function_trivial(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> pi (n);
@@ -74,7 +74,7 @@ vector<int> Strings::prefix_function_trivial(string s)
 	return pi;
 }
 
-vector<int> Strings::prefix_function(string s)
+vector<int> StringAlgs::prefix_function(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> pi (n);
@@ -97,7 +97,7 @@ vector<int> Strings::prefix_function(string s)
 	return pi;
 }
 
-long long Strings::hash_strung(std::string s, long long weightCoef)
+long long StringAlgs::hash_strung(std::string s, long long weightCoef)
 {
 	long long hash = 0;
 	unsigned int id = 1;
@@ -110,11 +110,11 @@ long long Strings::hash_strung(std::string s, long long weightCoef)
 	return hash;
 }
 
-unsigned Strings::SearchSubstringInText(string substring, string text, string divider)
+unsigned StringAlgs::SearchSubstringInText(string substring, string text, string divider)
 {
 	string final = substring + divider + text;
 
-	vector<int> zValues = Fudzi::Strings::z_function(final);
+	vector<int> zValues = Fudzi::StringAlgs::z_function(final);
 	unsigned len = substring.length(), numof = 0;
 	for (unsigned i = len + 1; i < zValues.size(); i++)
 	{
@@ -126,7 +126,7 @@ unsigned Strings::SearchSubstringInText(string substring, string text, string di
 	return numof;
 }
 
-void Strings::permutationUnordered(int k, string &s)
+void StringAlgs::permutationUnordered(int k, string &s)
 {
     for(unsigned int j = 1; j < s.size(); ++j)
     {
@@ -135,7 +135,7 @@ void Strings::permutationUnordered(int k, string &s)
     }
 }
 
-string Strings::reverseWithSTL(string &input)
+string StringAlgs::reverseWithSTL(string &input)
 {
 	std::string output("");
 	for (std::string::reverse_iterator rit=input.rbegin(); rit!=input.rend(); ++rit)

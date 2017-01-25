@@ -9,6 +9,8 @@
 #include <vector>
 #include <math.h>
 #include "algebra_elementary.hpp"
+
+#ifdef GOOGLE_TEST_SUITE
 #include "gtest/gtest.h"
 
 using namespace std;
@@ -156,5 +158,7 @@ int fibNumberBinet(int n)
 }
 */
 } // namespace Fudzi
+
+#endif
 
 // eof

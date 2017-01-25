@@ -5,6 +5,7 @@
  *  Task:
  *  Print all permutations for a given string
 **/
+//#define TASK1_SEPARATE_EXECUTABLE
 
 #include <iostream>
 #include <string>
@@ -14,9 +15,14 @@
 
 using namespace std;
 
+#ifdef TASK1_SEPARATE_EXECUTABLE
 int main()
 {
     string input = "abc";
+#else
+int task1_main(string input)
+{
+#endif
 
     cout << "Prints unordered permutations for a string: " << input << endl;
     unsigned len = input.size();
@@ -28,7 +34,7 @@ int main()
     else
     {
         Fudzi::AlgebraElementary fudzi_algebra_el;
-        Fudzi::Strings fudzi_strings;
+        Fudzi::StringAlgs fudzi_strings;
         for (unsigned long long i = 0; i < static_cast<unsigned long long>(fudzi_algebra_el.factorialRecursive(len)); ++i)
         {
             fudzi_strings.permutationUnordered(i, input);
