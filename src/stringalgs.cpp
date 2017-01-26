@@ -15,14 +15,46 @@ using namespace std;
 namespace Fudzi
 {
 
-vector<int> StringAlgs::z_function_trivial(string s)
+// Given a string S of length n.
+// Z Algorithm produces an array Z where Z[i] is the length of the longest substring starting from S[i] which is also a prefix of S, i.e.
+// the maximum k such that S[j] = S[i + j] for all 0 ≤ j < k. Note that Z[i] = 0 means that S[0] ≠ S[i]. For easier terminology, we will refer to
+// substrings which are also a prefix as prefix-substrings.
+// Пусть дана строка s длины n.
+// Тогда Z-функция ("зет-функция") от этой строки — это массив длины n, i-ый элемент которого равен наибольшему числу символов, начиная с позиции i,
+// совпадающих с первыми символами строки s.
+// Иными словами, z[i] — это наибольший общий префикс строки s и её i-го суффикса.
+// Example 1: str = "aaaaa":
+// z[0] = 0,
+// z[1] = 4,
+// z[2] = 3,
+// z[3] = 2,
+// z[4] = 1.
+// Example 2: str = "aaabaab":
+// z[0] = 0,
+// z[1] = 2,
+// z[2] = 1,
+// z[3] = 0,
+// z[4] = 2,
+// z[5] = 1,
+// z[6] = 0.
+// Example 3: str = "abacaba":
+// z[0] = 0,
+// z[1] = 0,
+// z[2] = 1,
+// z[3] = 0,
+// z[4] = 3,
+// z[5] = 0,
+// z[6] = 1.
+
+// O(n^2) efficiency
+vector<int> StringAlgs::z_function_trivial(string in)
 {
-	int n = static_cast<int>(s.length());
-	vector<int> z (n);
+	int n = static_cast<int>(in.length());
+	vector<int> z(n);
 
 	for (int i = 1; i < n; ++i)
 	{
-		while (i + z[i] < n && s[z[i]] == s[i + z[i]])
+		while (i + z[i] < n && in[z[i]] == in[i + z[i]])
 		{
 			++z[i];
 		}
@@ -30,10 +62,10 @@ vector<int> StringAlgs::z_function_trivial(string s)
 
 	return z;
 }
-
-vector<int> StringAlgs::z_function(string s) 
+// O(n) efficiency
+vector<int> StringAlgs::z_function(string in)
 {
-	int n = static_cast<int>(s.length());
+	int n = static_cast<int>(in.length());
 	vector<int> z(n);
 
 	for (int i = 1, l = 0, r = 0; i < n; ++i) 
@@ -42,7 +74,7 @@ vector<int> StringAlgs::z_function(string s)
 		{
 			z[i] = min(r - i + 1, z[i - l]);
 		}
-		while (i + z[i] < n && s[z[i]] == s[i + z[i]])
+		while (i + z[i] < n && in[z[i]] == in[i + z[i]])
 		{
 			++z[i];
 		}

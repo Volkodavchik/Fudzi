@@ -15,11 +15,12 @@ using namespace std;
 
 int main(int argc, char **argv) 
 {
-	Vertex<std::string, int> testGraph;
-
-
 #ifdef GOOGLE_TEST_SUITE
 	  ::testing::InitGoogleTest(&argc, argv);
 	  return RUN_ALL_TESTS();
 #endif
+
+	// adjacency list
+	std::vector<Vertex<std::string, int>> inGraph;
+
 }
