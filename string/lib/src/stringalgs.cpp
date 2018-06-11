@@ -8,6 +8,7 @@
 #include <string>
 #include <iterator>
 #include <math.h>
+
 #include "stringAlgs.hpp"
 
 using namespace std;
@@ -72,7 +73,7 @@ vector<int> StringAlgs::z_function(string in)
 	{
 		if (i <= r)
 		{
-			z[i] = min(r - i + 1, z[i - l]);
+			z[i] = static_cast<int>(std::fmin(r - i + 1, z[i - l]));
 		}
 		while (i + z[i] < n && in[z[i]] == in[i + z[i]])
 		{
@@ -136,7 +137,7 @@ long long StringAlgs::hash_strung(std::string s, long long weightCoef)
 
 	for(std::string::iterator it = s.begin(); it != s.end(); ++it, ++id)
 	{
-		hash += (*it)*pow(weightCoef, id);
+		hash += (*it)*(long long)pow(weightCoef, id);
 	}
 
 	return hash;
@@ -147,7 +148,8 @@ unsigned StringAlgs::SearchSubstringInText(string substring, string text, string
 	string final = substring + divider + text;
 
 	vector<int> zValues = Fudzi::StringAlgs::z_function(final);
-	unsigned len = substring.length(), numof = 0;
+	unsigned len = static_cast<unsigned>(substring.length()), 
+		numof = 0;
 	for (unsigned i = len + 1; i < zValues.size(); i++)
 	{
 		if (static_cast<unsigned>(zValues.at(i)) == len)
