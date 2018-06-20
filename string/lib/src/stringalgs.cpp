@@ -13,7 +13,7 @@
 
 using namespace std;
 
-namespace Fudzi
+namespace fudzi
 {
 
 // Given a string S of length n.
@@ -48,7 +48,7 @@ namespace Fudzi
 // z[6] = 1.
 
 // O(n^2) efficiency
-vector<int> StringAlgs::z_function_trivial(string in)
+vector<int> stringAlgs::z_function_trivial(string in)
 {
 	int n = static_cast<int>(in.length());
 	vector<int> z(n);
@@ -64,7 +64,7 @@ vector<int> StringAlgs::z_function_trivial(string in)
 	return z;
 }
 // O(n) efficiency
-vector<int> StringAlgs::z_function(string in)
+vector<int> stringAlgs::z_function(string in)
 {
 	int n = static_cast<int>(in.length());
 	vector<int> z(n);
@@ -88,7 +88,7 @@ vector<int> StringAlgs::z_function(string in)
 	return z;
 }
 
-vector<int> StringAlgs::prefix_function_trivial(string s)
+vector<int> stringAlgs::prefix_function_trivial(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> pi (n);
@@ -107,7 +107,7 @@ vector<int> StringAlgs::prefix_function_trivial(string s)
 	return pi;
 }
 
-vector<int> StringAlgs::prefix_function(string s)
+vector<int> stringAlgs::prefix_function(string s)
 {
 	int n = static_cast<int>(s.length());
 	vector<int> pi (n);
@@ -130,7 +130,7 @@ vector<int> StringAlgs::prefix_function(string s)
 	return pi;
 }
 
-long long StringAlgs::hash_strung(std::string s, long long weightCoef)
+long long stringAlgs::hash_string(std::string s, long long weightCoef)
 {
 	long long hash = 0;
 	unsigned int id = 1;
@@ -143,11 +143,11 @@ long long StringAlgs::hash_strung(std::string s, long long weightCoef)
 	return hash;
 }
 
-unsigned StringAlgs::SearchSubstringInText(string substring, string text, string divider)
+unsigned stringAlgs::SearchSubstringInText(string substring, string text, string divider)
 {
 	string final = substring + divider + text;
 
-	vector<int> zValues = Fudzi::StringAlgs::z_function(final);
+	vector<int> zValues = fudzi::stringAlgs::z_function(final);
 	unsigned len = static_cast<unsigned>(substring.length()), 
 		numof = 0;
 	for (unsigned i = len + 1; i < zValues.size(); i++)
@@ -160,7 +160,7 @@ unsigned StringAlgs::SearchSubstringInText(string substring, string text, string
 	return numof;
 }
 
-void StringAlgs::permutationUnordered(int k, string &s)
+void stringAlgs::permutationUnordered(int k, string &s)
 {
     for(unsigned int j = 1; j < s.size(); ++j)
     {
@@ -169,7 +169,7 @@ void StringAlgs::permutationUnordered(int k, string &s)
     }
 }
 
-string StringAlgs::reverseWithSTL(string &input)
+string stringAlgs::reverseWithSTL(string &input)
 {
 	std::string output("");
 	for (std::string::reverse_iterator rit=input.rbegin(); rit!=input.rend(); ++rit)

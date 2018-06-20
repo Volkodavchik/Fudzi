@@ -9,12 +9,12 @@
 #include <vector>
 #include <string>
 
-namespace Fudzi
+namespace fudzi
 {
 /*
  * Class stores algorithms related to strings operations
  */
-class StringAlgs
+class stringAlgs
 {
 private:
 protected:
@@ -22,7 +22,7 @@ public:
 	//! @brief Trivial algorithm for getting zet function for string
 	//! @param s string
 	//! @return vector of zet function for given string
-	static std::vector<int> z_function_trivial(std::string s);
+	std::vector<int> z_function_trivial(std::string s);
 	//! @brief Efficiency algorithm for getting zet function for string
 	//! @param s string
 	//! @return vector of zet function for given string
@@ -39,7 +39,7 @@ public:
 	//! @param s string
 	//! @param weightCoef coefficient for calculating hash, default value 31
 	//! @return hash for provided string
-	long long hash_strung(std::string s, long long weightCoef = 31);
+	long long hash_string(std::string s, long long weightCoef = 31);
 	//! @brief Searches and returns all substrings in given string(text)
 	//! @param substring string for looking
 	//! @param text given text in which we are looking for a substring
