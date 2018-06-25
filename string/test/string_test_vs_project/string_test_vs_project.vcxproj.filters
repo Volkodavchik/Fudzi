@@ -26,7 +26,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\unittests_algebra.cpp">
+    <ClCompile Include="..\src\unittest_stringAlgs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
