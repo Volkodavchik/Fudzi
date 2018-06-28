@@ -1,4 +1,5 @@
 To-do:
+- Add questions of faster/slower to well known complexities, like is O(logN) > O(N)? to BIG_O deck
 - Create deck Math, for math operations
 - Add permutations (repeated and not) to Anki deck Math
 - Add combinations (repeated and not) to Anki deck Math
