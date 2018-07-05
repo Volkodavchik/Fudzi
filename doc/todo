@@ -1,11 +1,8 @@
 To-do:
-- Create deck Math, for math operations
-- Add permutations (repeated and not) to Anki deck Math
-- Add combinations (repeated and not) to Anki deck Math
-- Update BIG_O with explanations to "why?", where is possible for Mergesort
+- Add permutations (repeated and not) to Anki deck ComputerScience
+- Add combinations (repeated and not) to Anki deck ComputerScience
 - Update BIG_O with explanations to "why?", where is possible for Timsort
 - Update BIG_O with explanations to "why?", where is possible for Heapsort
-- Update BIG_O with explanations to "why?", where is possible for Selection Sort
 - Update BIG_O with explanations to "why?", where is possible for Tree Sort
 - Update BIG_O with explanations to "why?", where is possible for Shell Sort
 - Update BIG_O with explanations to "why?", where is possible for Bucket Sort
@@ -14,6 +11,9 @@ To-do:
 - Update BIG_O with explanations to "why?", where is possible for Cubesort
 
 Done:
+- Update BIG_O with explanations to "why?", where is possible for Selection Sort
+- Create deck Math, for math operations (changed decision to use ComputerScience deck only)
+- Update BIG_O with explanations to "why?", where is possible for Mergesort
 - Update BIG_O with explanations to "why?", where is possible for Insertion Sort
 - Add questions of faster/slower to well known complexities, like is O(logN) > O(N)? to BIG_O deck
 - Update BIG_O with explanations to "why?", where is possible for Quicksort
