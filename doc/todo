@@ -1,4 +1,16 @@
 To-do:
+- Update Anki with explanations to "why?", where is possible for Timsort
+- Update Anki with explanations to "why?", where is possible for Heapsort
+- Update Anki with explanations to "why?", where is possible for Tree Sort
+- Update Anki with explanations to "why?", where is possible for Shell Sort
+- Update Anki with explanations to "why?", where is possible for Bucket Sort
+- Update Anki with explanations to "why?", where is possible for Radix Sort
+- Update Anki with explanations to "why?", where is possible for Counting Sort
+- Update Anki with explanations to "why?", where is possible for Cubesort
+
+Done:
+- Add combinations (repeated and not) to Anki
+- Add permutations (repeated and not) to Anki
 - Add Array operations complexity time/space to Anki
 - Add Stack operations complexity time/space to Anki
 - Add Queue operations complexity time/space to Anki
@@ -13,18 +25,6 @@ To-do:
 - Add Splay Tree operations complexity time/space to Anki
 - Add AVL Tree operations complexity time/space to Anki
 - Add KD Tree operations complexity time/space to Anki
-- Add permutations (repeated and not) to Anki
-- Add combinations (repeated and not) to Anki
-- Update Anki with explanations to "why?", where is possible for Timsort
-- Update Anki with explanations to "why?", where is possible for Heapsort
-- Update Anki with explanations to "why?", where is possible for Tree Sort
-- Update Anki with explanations to "why?", where is possible for Shell Sort
-- Update Anki with explanations to "why?", where is possible for Bucket Sort
-- Update Anki with explanations to "why?", where is possible for Radix Sort
-- Update Anki with explanations to "why?", where is possible for Counting Sort
-- Update Anki with explanations to "why?", where is possible for Cubesort
-
-Done:
 - Update BIG_O with explanations to "why?", where is possible for Selection Sort
 - Create deck Math, for math operations (changed decision to use ComputerScience deck only)
 - Update BIG_O with explanations to "why?", where is possible for Mergesort
