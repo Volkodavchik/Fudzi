@@ -10,3 +10,6 @@ This library collects knowledge taken from different sources:
   by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein
 - http://algolist.manual.ru
 
+
+Full checklist is availbale in Google Docs under link:
+- https://drive.google.com/open?id=1Q6eUthLSu9hABu2iQMqjlg5161oKi647pk5qN0usHno
