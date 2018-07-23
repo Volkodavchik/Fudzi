@@ -1,18 +1,18 @@
 To-do:
-- Add heap
-- Add binary heap
-- Add heap property
-- Add priority queue
-- Update Anki with explanations to "why?", where is possible for Timsort
-- Update Anki with explanations to "why?", where is possible for Heapsort
-- Update Anki with explanations to "why?", where is possible for Tree Sort
-- Update Anki with explanations to "why?", where is possible for Shell Sort
-- Update Anki with explanations to "why?", where is possible for Bucket Sort
-- Update Anki with explanations to "why?", where is possible for Radix Sort
-- Update Anki with explanations to "why?", where is possible for Counting Sort
-- Update Anki with explanations to "why?", where is possible for Cubesort
+- [Anki] Add priority queue
+- [Anki] Update explanations to "why?", where is possible for Timsort
+- [Anki] Update explanations to "why?", where is possible for Heapsort
+- [Anki] Update explanations to "why?", where is possible for Tree Sort
+- [Anki] Update explanations to "why?", where is possible for Shell Sort
+- [Anki] Update explanations to "why?", where is possible for Bucket Sort
+- [Anki] Update explanations to "why?", where is possible for Radix Sort
+- [Anki] Update explanations to "why?", where is possible for Counting Sort
+- [Anki] Update explanations to "why?", where is possible for Cubesort
 
 Done:
+- [Anki] Add heap
+- [Anki] Add heap property
+- [Anki] Add binary search property
 - Add combinations (repeated and not) to Anki
 - Add permutations (repeated and not) to Anki
 - Add Array operations complexity time/space to Anki

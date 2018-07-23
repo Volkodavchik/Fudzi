@@ -11,5 +11,5 @@ This library collects knowledge taken from different sources:
 - http://algolist.manual.ru
 
 
-Full checklist is availbale in Google Docs under link:
+Full checklist is available in Google Docs under link:
 - https://drive.google.com/open?id=1Q6eUthLSu9hABu2iQMqjlg5161oKi647pk5qN0usHno
