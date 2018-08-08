@@ -10,6 +10,7 @@ To-do:
 - [Anki] Update explanations to "why?", where is possible for Cubesort
 
 Done:
+- Add basic boolean operations to Anki
 - [Anki] Add heap
 - [Anki] Add heap property
 - [Anki] Add binary search property
